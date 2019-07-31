@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="mbBarraDeMenu">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="mnArquivo">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Arquivo"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="mnConsulta">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Consulta"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="miAgendarConsulta">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Agendar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miAgendarConsultaActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="miEditarConsulta">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Alterar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miEditarConsultaActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="miExcluirConsulta">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Excluir"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miExcluirConsultaActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="miListarConsulta">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Listar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miListarConsultaActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="mnGerenciamento">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Gerenciamento"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="javax.swing.JMenu" name="mnPaciente">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Paciente"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="miCadastrarPaciente">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cadastrar"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miCadastrarPacienteActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="miEditarPaciente">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Editar"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miEditarPacienteActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="miRemoverPaciente">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Remover"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miRemoverPacienteActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="miListarPacientes">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Listar"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miListarPacientesActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="mnFuncionario">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Funcionario"/>
+                  </Properties>
+                  <SubComponents>
+                    <Menu class="javax.swing.JMenu" name="mnFuncionarioGeral">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Geral"/>
+                      </Properties>
+                      <SubComponents>
+                        <MenuItem class="javax.swing.JMenuItem" name="miCadastrarFuncionarioGeral">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Cadastrar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miCadastrarFuncionarioGeralActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="miEditarFuncionarioGeral">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Editar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miEditarFuncionarioGeralActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="miExcluirFuncionarioGeral">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Excluir"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miExcluirFuncionarioGeralActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="miListarFuncionarioGeral">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Listar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miListarFuncionarioGeralActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                      </SubComponents>
+                    </Menu>
+                    <Menu class="javax.swing.JMenu" name="mnMedico">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="M&#xe9;dico"/>
+                      </Properties>
+                      <SubComponents>
+                        <MenuItem class="javax.swing.JMenuItem" name="miCadastrarMedico">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Cadastar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miCadastrarMedicoActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="miAlterarMedico">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Editar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miAlterarMedicoActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="miRemoverMedico">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Remover"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miRemoverMedicoActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="miListarMedicos">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Listar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miListarMedicosActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                      </SubComponents>
+                    </Menu>
+                    <Menu class="javax.swing.JMenu" name="mnFuncionarioAtendente">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Atendente"/>
+                      </Properties>
+                      <SubComponents>
+                        <MenuItem class="javax.swing.JMenuItem" name="miCadastrarFuncionarioAtendente">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Cadastrar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miCadastrarFuncionarioAtendenteActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="miEditarFuncionarioAtendente">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Editar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miEditarFuncionarioAtendenteActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="miRemoverFuncionarioAtendente">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Remover"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miRemoverFuncionarioAtendenteActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="miListarFuncionariosAtendentes">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Listar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miListarFuncionariosAtendentesActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                      </SubComponents>
+                    </Menu>
+                  </SubComponents>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="mnBuscar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Buscar"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="javax.swing.JMenu" name="mnBuscarFuncionario">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Funcion&#xe1;rio"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="miBuscarAtendente">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Atendente"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miBuscarAtendenteActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="miBuscarGeral">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Geral"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miBuscarGeralActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="miBuscarMedico">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="M&#xe9;dico"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miBuscarMedicoActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <MenuItem class="javax.swing.JMenuItem" name="miBuscarPaciente">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Paciente"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miBuscarPacienteActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="mnEnviarEmail">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enviar e-mail"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="miNovoEmail">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Novo email"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miNovoEmailActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <Menu class="javax.swing.JMenu" name="mnParaTodos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Para todos..."/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnParaTodosActionPerformed"/>
+                  </Events>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="miFuncionarios">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Funcionarios"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miFuncionariosActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="miMedicos">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Medicos"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miMedicosActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="miPacientes">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Pacientes"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miPacientesActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="miFuncAtendentes">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Func. atendentes"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miFuncAtendentesActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="miFuncGerais">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Func. gerais"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miFuncGeraisActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="mnAlterar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Alterar"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="miLogin">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Login"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miLoginActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="miSenha">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Senha"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miSenhaActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="miLoginSenha">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Login e senha"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miLoginSenhaActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <MenuItem class="javax.swing.JMenuItem" name="miSalvar">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+S"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Salvar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miSalvarActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miSair">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Sair"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miSairActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="mnHelp">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ajuda"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnHelpActionPerformed"/>
+          </Events>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="miSobre">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Sobre"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miSobreActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Ojuara Sistemas - Sistema Cl&#xed;nico"/>
+    <Property name="extendedState" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection code="MAXIMIZED_BOTH" type="code"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="mbBarraDeMenu"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="pnPrincipal" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="pnPrincipal" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="pnPrincipal">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="pnHora" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="pnHora" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="pnHora">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lbSAM" min="-2" pref="88" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="lbHora" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
+                              <Component id="lbLogo" min="-2" pref="479" max="-2" attributes="0"/>
+                              <EmptySpace pref="217" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace pref="65" max="32767" attributes="0"/>
+                              <Component id="lbLogo" min="-2" pref="394" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="lbHora" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="lbSAM" min="-2" pref="81" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lbLogo">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbHora">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Gadugi" size="18" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="00:00:00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbSAM">
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

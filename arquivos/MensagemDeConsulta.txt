@@ -1,0 +1,3 @@
+Sr(a). NNNNNNN, QQQQQQQ
+	Informamos que sua consulta de ID: ------- ,foi agendada com sucesso para a seguinte data: DDDDDDD. Em caso de dúvida, contate-nos. QQQQQQQ
+	Att., Administração da Clínica CCCCCCC;
